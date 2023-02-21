@@ -17,7 +17,7 @@
             screen.value = "Please enter";
         } else {
             try {
-                let answer = math.evaluate(screen.value);
+                let answer = eval(screen.value);
                 screen.value = answer;
             } catch (error) {
                 console.error(error);
